@@ -1,0 +1,83 @@
+body {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #a81c2c;
+}
+
+
+/*===========================================================================*/
+/* Background colours */
+.bg-white {
+    background-color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    width: auto;
+}
+
+.bg-light-gray {
+    background-color: #e9eff1;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+
+}
+
+/*===========================================================================*/
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: medium;
+    color: #b71820;
+}
+
+
+/*===========================================================================*/
+/* Table stuff */
+
+table {
+    /* Collapse the border between the element headers in the table*/
+    border-collapse: collapse;
+}
+
+tr,
+th,
+td {
+    border: 1px solid #c7c6c7;
+    padding-left: 5px;
+    width: 120px;
+}
+
+tr {
+    background-color: #dddddd;
+    font-size: small;
+
+}
+
+td {
+    background-color: #e9eff1;
+    font-size: small;
+}
+
+p {
+    font-size: smaller;
+}
+
+
+.red-button {
+    display: flex;
+    padding-right: 10px;
+}
+
+
+
+input {
+    width: 30px;
+}
