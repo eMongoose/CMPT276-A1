@@ -2,6 +2,8 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     background-color: #a81c2c;
+    margin-top: -10px;
+
 }
 
 
@@ -9,10 +11,8 @@ body {
 /* Background colours */
 .bg-white {
     background-color: white;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
+    padding: 20px;
+    padding-top: 30px;
     width: auto;
 }
 
@@ -23,7 +23,13 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     width: fit-content;
+    border-radius: 3px;
 
+}
+
+.bg-gray {
+    background-color: #3d3935;
+    height: 25px;
 }
 
 /*===========================================================================*/
@@ -34,6 +40,7 @@ h1 {
 }
 
 h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: medium;
     color: #b71820;
 }
@@ -51,8 +58,10 @@ tr,
 th,
 td {
     border: 1px solid #c7c6c7;
-    padding-left: 5px;
     width: 120px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 11px;
+    padding: 5px;
 }
 
 tr {
@@ -63,7 +72,9 @@ tr {
 
 td {
     background-color: #e9eff1;
-    font-size: small;
+    padding-top: 5px;
+    font-stretch: condensed;
+
 }
 
 p {
@@ -71,13 +82,48 @@ p {
 }
 
 
-.red-button {
+.red-button-container {
     display: flex;
-    padding-right: 10px;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.red-button {
+    padding: 5px;
+    margin-right: 10px;
+    color: white;
+    background-color: #b51119;
+    border-radius: 5px;
+    border: 1px solid #e9eff1;
+    width: 85px;
+    font-size: 12px;
+
+}
+
+.red-button:hover {
+    background-color: darkred;
+    /* Hover background color */
+}
+
+.red-button:active {
+    background-color: #b51119;
+    /* On-click */
+}
+
+.add-row-button {
+    font-size: 12px;
+    width: auto;
+}
+
+input {
+    width: 25px;
+    margin-bottom: -5px;
 }
 
 
-
-input {
-    width: 30px;
+.white-box-shadow {
+    width: auto;
+    background-color: #a32020;
+    /* Dark red color */
+    box-shadow: 5px 0 5px -2px #82202b, -5px 0 5px -2px #82202b;
 }

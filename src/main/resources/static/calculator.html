@@ -4,47 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grade Calculator</title>
     <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
 </head>
 
 <body>
-    <section class="bg-white">
-        <h1>Grade Calculator</h1>
-        <section class="bg-light-gray">
-            <h3>Activities</h3>
-            <p>Give grades to the numeric activities:</p>
-            <p>
-            <table>
-                <tr align="left">
-                    <th>Name</th>
-                    <th>Short Name</th>
-                    <th>Weight</th>
-                    <th>Grade</th>
-                    <th>Percent</th>
-                </tr>
-                <tr>
-                    <td>Activity 1</td>
-                    <td>A1</td>
-                    <td><input type="text"></td>
-                    <td><input type="text"> / <input type="text"></td>
-                </tr>
-                <tr>
-                    <td>Activity 2</td>
-                    <td>A2</td>
-                    <td><input type="text"></td>
-                    <td><input type="text"> / <input type="text"></td>
-                </tr>
-            </table>
-            </p>
-            <button>ADD ROW</button>
-            <h3>Result</h3>
-            <section class="red-button">
-                <button style="float: right">WEIGHTED</button>
-                <button style="float: right">MEAN</button>
+    <div class="white-box-shadow">
+        <div class="bg-gray"></div>
+        <section class="bg-white">
+            <h1>Grade Calculator</h1>
+            <section class="bg-light-gray">
+                <h3>Activities</h3>
+                <p>Give grades to the numeric activities:</p>
+                <p>
+                <table id="table">
+                    <tr align="left">
+                        <th>Name</th>
+                        <th>Short Name</th>
+                        <th>Weight</th>
+                        <th>Grade</th>
+                        <th>Percent</th>
+                    </tr>
+                    <tr>
+                        <td>Activity 1</td>
+                        <td>A1</td>
+                        <td><input type="text"></td>
+                        <td><input id="numer" type="text"> / <input id="denom" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Activity 2</td>
+                        <td>A2</td>
+                        <td><input type="text"></td>
+                        <td><input id="numer" type="text"> / <input id="denom" type="text"></td>
+                    </tr>
+                </table>
+                </p>
+                <button class="add-row-button" onclick="addRow()">ADD ROW</button>
+                <h3>Result</h3>
+                <div class="red-button-container">
+                    <button class="red-button" style="float: right">WEIGHTED</button>
+                    <button class="red-button" style="float: right">MEAN</button>
+                </div>
             </section>
         </section>
-    </section>
+        <div class="bg-gray"></div>
+    </div>
 </body>
 
 </html>
