@@ -3,9 +3,7 @@ body {
     padding-right: 30px;
     background-color: #a81c2c;
     margin-top: -10px;
-
 }
-
 
 /*===========================================================================*/
 /* Background colours */
@@ -24,7 +22,6 @@ body {
     padding-right: 10px;
     width: fit-content;
     border-radius: 3px;
-
 }
 
 .bg-gray {
@@ -32,8 +29,13 @@ body {
     height: 25px;
 }
 
-/*===========================================================================*/
+.white-box-shadow {
+    width: auto;
+    background-color: #a32020;
+    box-shadow: 5px 0 5px -2px #82202b, -5px 0 5px -2px #82202b;
+}
 
+/*===========================================================================*/
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
@@ -44,11 +46,8 @@ h3 {
     font-size: medium;
     color: #b71820;
 }
-
-
 /*===========================================================================*/
 /* Table stuff */
-
 table {
     /* Collapse the border between the element headers in the table*/
     border-collapse: collapse;
@@ -76,11 +75,12 @@ td {
     font-stretch: condensed;
 
 }
-
+/*===========================================================================*/
 p {
     font-size: smaller;
 }
-
+/*===========================================================================*/
+/* Button stuff */
 
 .red-button-container {
     display: flex;
@@ -102,28 +102,19 @@ p {
 
 .red-button:hover {
     background-color: darkred;
-    /* Hover background color */
 }
 
 .red-button:active {
     background-color: #b51119;
-    /* On-click */
-}
-
-.add-row-button {
-    font-size: 12px;
-    width: auto;
 }
 
 input {
-    width: 25px;
+    width: 40px;
     margin-bottom: -5px;
 }
 
-
-.white-box-shadow {
+.addButton {
+    font-size: 9px;
     width: auto;
-    background-color: #a32020;
-    /* Dark red color */
-    box-shadow: 5px 0 5px -2px #82202b, -5px 0 5px -2px #82202b;
+    text-align: center;
 }
