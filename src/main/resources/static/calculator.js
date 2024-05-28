@@ -43,19 +43,19 @@ function addRow() {
     ///////////////////////////////////////////////////////////////////////////
     // grade cell
     // numerator
-    let numerInput = document.createElement('input');
-    numerInput.type = 'number';
-    cell4.appendChild(numerInput);
-    numerInput.addEventListener('input', () => updatePercent(row));
+    let numeratorInput = document.createElement('input');
+    numeratorInput.type = 'number';
+    cell4.appendChild(numeratorInput);
+    numeratorInput.addEventListener('input', () => updatePercent(row));
 
     // divider
     cell4.appendChild(document.createTextNode(' / '));
 
     // denominator
-    let denomInput = document.createElement('input');
-    denomInput.type = 'number';
-    cell4.appendChild(denomInput);
-    denomInput.addEventListener('input', () => updatePercent(row));
+    let denominatorInput = document.createElement('input');
+    denominatorInput.type = 'number';
+    cell4.appendChild(denominatorInput);
+    denominatorInput.addEventListener('input', () => updatePercent(row));
 
     let percent = document.createElement('span');
     cell5.appendChild(percent);
