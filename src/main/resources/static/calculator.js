@@ -4,7 +4,6 @@ let table = document.getElementById('table').getElementsByTagName('tbody')[0];
 
 // add initial rows
 addRow();
-addRow();
 
 // event listeners
 document.getElementById('addRow').addEventListener('click', addRow);
